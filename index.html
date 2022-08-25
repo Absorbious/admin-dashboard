@@ -4,33 +4,52 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
     <title>Admin Dashboard</title>
   </head>
   <body>
-
     <div class="container">
-
-        <!-- Dashboard Menu -->
-      <div class="menu">
+      <!-- Dashboard Menu -->
+      <div class="sidebar">
         <div class="logo">
-          <a href="#"><img src="#" alt="Logo" /></a>
+          <i class="bi bi-speedometer2"></i>
+          <a href="#">Dashboard</a>
         </div>
         <div class="nav">
           <ul>
-            <li>Home</li>
-            <li>Profile</li>
-            <li>Messages</li>
-            <li>History</li>
-            <li>Taks</li>
-            <li>Communities</li>
+            <li><i class="bi bi-house"></i><a href="#">Home</a></li>
+            <li><i class="bi bi-person"></i><a href="#">Profile</a></li>
+            <li>
+              <i class="bi bi-chat-left-text"></i><a href="#">Messages</a>
+            </li>
+            <li><i class="bi bi-clock-history"></i><a href="#">History</a></li>
+            <li><i class="bi bi-list-task"></i><a href="#">Tasks</a></li>
+            <li><i class="bi bi-people"></i><a href="#">Communities</a></li>
           </ul>
         </div>
         <div class="nav2">
           <ul>
-            <li>Settings</li>
-            <li>Support</li>
-            <li>Privacy</li>
+            <li><i class="bi bi-gear"></i><a href="#">Settings</a></li>
+            <li>
+              <i class="bi bi-question-square"></i><a href="#">Support</a>
+            </li>
+            <li><i class="bi bi-shield-check"></i><a href="#">Privacy</a></li>
           </ul>
         </div>
       </div>
@@ -39,59 +58,64 @@
       <!-- Top User Bar -->
       <div class="userbar">
         <div class="search">
-          <i></i>
+          <i class="bi bi-search"></i>
           <input type="text" />
         </div>
         <div class="user">
-          <i>.</i>
-          <img src="#" alt="avatar" />
-          <span>User Name</span>
+          <a href="#"><i class="bi bi-bell"></i></a>
+          <img
+            src="undraw_profile_pic_ic-5-t.svg"
+            alt="avatar"
+            width="60px"
+            height="60px"
+          />
+          <a href="#">User Name</a>
         </div>
         <div class="user-info">
-          <img src="#" alt="avatar" />
+          <a href="#"
+            ><img
+              src="undraw_profile_pic_ic-5-t.svg"
+              alt="avatar"
+              width="100px"
+              height="100px"
+          /></a>
           <p class="greeting">Hi there,</p>
           <p class="username">User Name (@username)</p>
         </div>
         <div class="actions">
-          <button>New</button>
-          <button>Upload</button>
-          <button>Share</button>
+          <button class="button">New</button>
+          <button class="button">Upload</button>
+          <button class="button">Share</button>
         </div>
       </div>
       <!-- End Top User Bar -->
 
       <!-- Main Content -->
       <div class="main">
-
         <!-- Projects -->
         <div class="projects">
           <h2>Your Projects</h2>
           <div class="card">
             <h3>Super Cool Project</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus
-              ullam, reprehenderit ab necessitatibus voluptatum pariatur sunt
-              vitae? Neque saepe consequatur natus explicabo, minus at? Totam
-              neque libero quibusdam hic possimus?
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
             </p>
             <div class="icons">
-                <img src="#" alt=" ">
-                <img src="#" alt=" ">
-                <img src="#" alt=" ">
+              <a href="#"><i class="bi bi-star"></i></a>
+              <a href="#"><i class="bi bi-bookmark-plus"></i></a>
+              <a href="#"><i class="bi bi-share"></i></a>
             </div>
           </div>
           <div class="card">
             <h3>Less Cool Project</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus
-              ullam, reprehenderit ab necessitatibus voluptatum pariatur sunt
-              vitae? Neque saepe consequatur natus explicabo, minus at? Totam
-              neque libero quibusdam hic possimus?
+              ullam
             </p>
             <div class="icons">
-                <img src="#" alt=" ">
-                <img src="#" alt=" ">
-                <img src="#" alt=" ">
+              <a href="#"><i class="bi bi-star"></i></a>
+              <a href="#"><i class="bi bi-bookmark-plus"></i></a>
+              <a href="#"><i class="bi bi-share"></i></a>
             </div>
           </div>
           <div class="card">
@@ -99,13 +123,12 @@
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus
               ullam, reprehenderit ab necessitatibus voluptatum pariatur sunt
-              vitae? Neque saepe consequatur natus explicabo, minus at? Totam
-              neque libero quibusdam hic possimus?
+              vitae? 
             </p>
             <div class="icons">
-                <img src="#" alt=" ">
-                <img src="#" alt=" ">
-                <img src="#" alt=" ">
+              <a href="#"><i class="bi bi-star"></i></a>
+              <a href="#"><i class="bi bi-bookmark-plus"></i></a>
+              <a href="#"><i class="bi bi-share"></i></a>
             </div>
           </div>
           <div class="card">
@@ -113,13 +136,12 @@
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus
               ullam, reprehenderit ab necessitatibus voluptatum pariatur sunt
-              vitae? Neque saepe consequatur natus explicabo, minus at? Totam
-              neque libero quibusdam hic possimus?
+              vitae? Neque saepe consequatur natus explicabo
             </p>
             <div class="icons">
-                <img src="#" alt=" ">
-                <img src="#" alt=" ">
-                <img src="#" alt=" ">
+              <a href="#"><i class="bi bi-star"></i></a>
+              <a href="#"><i class="bi bi-bookmark-plus"></i></a>
+              <a href="#"><i class="bi bi-share"></i></a>
             </div>
           </div>
           <div class="card">
@@ -127,27 +149,24 @@
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus
               ullam, reprehenderit ab necessitatibus voluptatum pariatur sunt
-              vitae? Neque saepe consequatur natus explicabo, minus at? Totam
-              neque libero quibusdam hic possimus?
+              vitae? Neque saepe consequatur natus explicabo, minus at?
             </p>
             <div class="icons">
-                <img src="#" alt=" ">
-                <img src="#" alt=" ">
-                <img src="#" alt=" ">
+              <a href="#"><i class="bi bi-star"></i></a>
+              <a href="#"><i class="bi bi-bookmark-plus"></i></a>
+              <a href="#"><i class="bi bi-share"></i></a>
             </div>
           </div>
           <div class="card">
             <h3>Money Maker</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus
-              ullam, reprehenderit ab necessitatibus voluptatum pariatur sunt
-              vitae? Neque saepe consequatur natus explicabo, minus at? Totam
-              neque libero quibusdam hic possimus?
+              ullam
             </p>
             <div class="icons">
-                <img src="#" alt=" ">
-                <img src="#" alt=" ">
-                <img src="#" alt=" ">
+              <a href="#"><i class="bi bi-star"></i></a>
+              <a href="#"><i class="bi bi-bookmark-plus"></i></a>
+              <a href="#"><i class="bi bi-share"></i></a>
             </div>
           </div>
         </div>
@@ -155,50 +174,60 @@
 
         <!-- Announcements -->
         <div class="announcements">
-            <h2>Announcements</h2>
+          <h2>Announcements</h2>
+          <div class="annons">
             <div class="annon">
-                <h4>Site Maintenance</h4>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium optio, ipsam, officiis eos eius, nulla adipisci incidunt earum alias voluptas debitis. Corporis officia rem illo perferendis doloremque in modi fuga.</p>
+              <h4>Site Maintenance</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Laudantium optio, ipsam, officiis eos eius.
+              </p>
             </div>
             <div class="annon">
-                <h4>Community Share Day</h4>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium optio, ipsam, officiis eos eius, nulla adipisci incidunt earum alias voluptas debitis. Corporis officia rem illo perferendis doloremque in modi fuga.</p>
+              <h4>Community Share Day</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Laudantium optio, ipsam, officiis eos eius.
+              </p>
             </div>
             <div class="annon">
-                <h4>Updated Privacy Policy</h4>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium optio, ipsam, officiis eos eius, nulla adipisci incidunt earum alias voluptas debitis. Corporis officia rem illo perferendis doloremque in modi fuga.</p>
+              <h4>Updated Privacy Policy</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Laudantium optio, ipsam, officiis eos eius.
+              </p>
             </div>
+          </div>
         </div>
         <!-- End Announcements -->
 
         <!-- Trending -->
         <div class="trending">
-            <h2>Trending</h2>
-            <div class="trends">
-                <div class="trend">
-                    <img src="#" alt=" ">
-                    <p class="name">@name</p>
-                    <p class="description">Some description</p>
-                </div>
-                <div class="trend">
-                    <img src="#" alt=" ">
-                    <p class="name">@name</p>
-                    <p class="description">Some description</p>
-                </div>
-                <div class="trend">
-                    <img src="#" alt=" ">
-                    <p class="name">@name</p>
-                    <p class="description">Some description</p>
-                </div>
-                <div class="trend">
-                    <img src="#" alt=" ">
-                    <p class="name">@name</p>
-                    <p class="description">Some description</p>
-                </div>
+          <h2>Trending</h2>
+          <div class="trends">
+            <div class="trend">
+              <img src="undraw_profile_pic_ic-5-t.svg" alt="" width="50px"/>
+              <p class="name">@name</p>
+              <p class="description">Some description</p>
             </div>
+            <div class="trend">
+              <img src="undraw_profile_pic_ic-5-t.svg" alt="" width="50px"/>
+              <p class="name">@name</p>
+              <p class="description">Some description</p>
+            </div>
+            <div class="trend">
+              <img src="undraw_profile_pic_ic-5-t.svg" alt="" width="50px"/>
+              <p class="name">@name</p>
+              <p class="description">Some description</p>
+            </div>
+            <div class="trend">
+              <img src="undraw_profile_pic_ic-5-t.svg" alt="" width="50px"/>
+              <p class="name">@name</p>
+              <p class="description">Some description</p>
+            </div>
+          </div>
         </div>
         <!-- End Trending -->
-
       </div>
       <!-- End Main Content -->
     </div>
